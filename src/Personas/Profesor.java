@@ -3,16 +3,16 @@ package Personas;
 public class Profesor extends Persona{
     private double salarioB;
     private int aniosDeExperiencia;
-    private boolean tiempoDeTrabajo; //Medio tiempo o tiempo completo
+    private boolean tiempoCompleto; //Medio tiempo o tiempo completo
 
     public Profesor() {
     }
 
-    public Profesor(String nombre, String identificacion, int edad, double salarioB, int aniosDeExperiencia, boolean tiempoDeTrabajo) {
+    public Profesor(String nombre, String identificacion, int edad, double salarioB, int aniosDeExperiencia, boolean tiempoCompleto) {
         super(nombre, identificacion, edad);
         this.salarioB = salarioB;
         this.aniosDeExperiencia = aniosDeExperiencia;
-        this.tiempoDeTrabajo = tiempoDeTrabajo;
+        this.tiempoCompleto = tiempoCompleto;
     }
 
     public double getSalarioB() {
@@ -31,11 +31,11 @@ public class Profesor extends Persona{
         this.aniosDeExperiencia = aniosDeExperiencia;
     }
 
-    public boolean isTiempoDeTrabajo() {
-        return tiempoDeTrabajo;
+    public boolean isTiempoCompleto() {
+        return tiempoCompleto;
     }
 
-    public void setTiempoDeTrabajo(boolean tiempoDeTrabajo) {
-        this.tiempoDeTrabajo = tiempoDeTrabajo;
+    public void setTiempoCompleto(boolean tiempoCompleto) {
+        this.tiempoCompleto = tiempoCompleto;
     }
 }
