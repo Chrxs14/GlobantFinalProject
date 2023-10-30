@@ -10,6 +10,7 @@ public class Menu {
     }
 
     public void mostrarMenu(Universidad u){
+        u.defaultValues();
 
         int opcion;
         boolean exit = false;
@@ -20,7 +21,6 @@ public class Menu {
             System.out.println("[3] Registrar un nuevo estudiante.");
             System.out.println("[4] Registrar un nuevo profesor.");
             System.out.println("[5] Crear una nueva clase.");
-            System.out.println("[6] Enumerar todas las clases por estudiante.");
             System.out.println("[0] Salir");
 
             System.out.print("----- Ingrese su opcion: ");
@@ -34,6 +34,7 @@ public class Menu {
                     break;
                 case 2:
                     System.out.println("----- Clases -----");
+                    u.mostrarClases();
                     exit = menuExit();
                     break;
                 case 3:
@@ -48,10 +49,7 @@ public class Menu {
                     break;
                 case 5:
                     System.out.println("----- Crear una nueva clase. -----");
-                    exit = menuExit();
-                    break;
-                case 6:
-                    System.out.println("----- Consulta de clases registradas por estudiante -----");
+                    u.addClase();
                     exit = menuExit();
                     break;
                 case 0:
